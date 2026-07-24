@@ -64,7 +64,7 @@
   .hero-bg::after{
     content:"";
     position:absolute; inset:0;
-    background: linear-gradient(180deg, rgba(20,17,14,0.25) 0%, rgba(20,17,14,0.6) 65%, rgba(20,17,14,0.95) 100%);
+    background: linear-gradient(180deg, rgba(20,17,14,0.08) 0%, rgba(20,17,14,0.35) 65%, rgba(20,17,14,0.78) 100%);
   }
   .hero::after{
     content:"";
@@ -181,7 +181,11 @@
     z-index:1;
   }
   .card .meta{ position:relative; z-index:2; padding:20px; }
-  .card .tc{ font-size:10px; color:var(--amber); margin-bottom:8px; }
+  .card .tc{
+    font-size:10px; color:#F4E9D8; margin-bottom:8px;
+    display:inline-block; background:rgba(15,12,9,0.72);
+    padding:4px 9px; border-radius:3px; letter-spacing:0.04em;
+  }
   .card h3{ font-size:19px; font-weight:500; font-family:'Fraunces', serif; }
   .card .yr{ font-size:12px; color:var(--cream-dim); margin-top:4px; }
 
@@ -244,6 +248,7 @@
     .hero-content{ padding:0 24px 56px; }
     .hero-scroll{ display:none; }
     .grid{ grid-template-columns:repeat(2,1fr); }
+    .grid .card{ grid-column:auto !important; }
     .about{ grid-template-columns:1fr; }
     .about .portrait{ max-width:240px; }
     footer{ flex-direction:column; gap:8px; padding:24px; }
@@ -274,14 +279,13 @@
   </div>
   <div class="hero-content">
     <div class="hero-eyebrow"><span class="dot"></span><span class="mono">director / producer / writer</span></div>
-    <h1 class="serif">stories worth<br>staying with</h1>
-    <p class="sub">Helen Spooner — BAFTA, Emmy and RTS award nominated filmmaker, with 11 years making documentary for BBC, Channel 4, Netflix, MSNBC and ARTE.</p>
+    <h1 class="serif">helen spooner</h1>
   </div>
   <div class="hero-scroll"><span class="stem"></span><span class="mono">scroll</span></div>
 </section>
 
 <section id="documentary" class="category">
-  <div class="category-eyebrow mono">01 — documentary · 12 works</div>
+  <div class="category-eyebrow mono">01 — documentary · 14 works</div>
   <div class="category-head"><h2>Documentary</h2></div>
   <p class="category-sub">Broadcast and streaming documentary work spanning eleven years, from single films to multi-part series.</p>
 
@@ -382,6 +386,22 @@
         <div class="yr">in development</div>
       </div>
     </div>
+    <div class="card" style="grid-column:2;">
+      <div class="frame" style="--frame-a:#2c3438;--frame-b:#121516;"><img src="stills/hijas-del-viento.png" alt="Hijas Del Viento"></div>
+      <div class="meta">
+        <div class="tc mono">director · in development</div>
+        <h3 class="serif">Hijas Del Viento</h3>
+        <div class="yr">feature film · in development</div>
+      </div>
+    </div>
+    <div class="card" style="grid-column:3;">
+      <div class="frame" style="--frame-a:#38302c;--frame-b:#171310;"><img src="stills/all-monsters-are-human.webp" alt="All Monsters are Human"></div>
+      <div class="meta">
+        <div class="tc mono">director</div>
+        <h3 class="serif">All Monsters are Human</h3>
+        <div class="yr">short film · winner, Best British Short, London Cheap Cuts · winner, Best Short, Amsterdam IQMF</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -426,7 +446,7 @@
     <div class="portrait"><img src="helen-with-camera.jpg" alt="Helen Spooner filming on location"></div>
     <div class="about-copy">
       <div class="section-eyebrow mono">about</div>
-      <h2 class="serif">helen spooner — bafta, emmy and rts award nominated filmmaker.</h2>
+      <h2 class="serif">BAFTA, Emmy and RTS award nominated filmmaker.</h2>
       <p>With 11 years making documentary for BBC, Channel 4, Netflix, MSNBC and ARTE, and 15+ broadcast credits to her name, Helen directs and produces character-led, investigative films — work recognised with BAFTA, Emmy and RTS nominations.</p>
       <p>Her work moves between investigative series and feature documentary — directing intimate, character-led films and producing high-stakes journalism on subjects spanning conflict, crime and abuse of power.</p>
       <div class="stats">
@@ -439,7 +459,7 @@
 </section>
 
 <section id="contact" class="contact">
-  <h2 class="serif">let's chat.</h2>
+  <h2 class="serif">Let's chat.</h2>
   <div class="contact-row">
     <a class="contact-email mono" href="#" id="contact-email-link">get in touch</a>
     <div class="contact-links">
@@ -452,7 +472,7 @@
 
 <footer>
   <span class="mono">© 2026 helen spooner</span>
-  <span class="mono">built with care, edited with patience</span>
+  <span class="mono">Built with care, edited with patience</span>
 </footer>
 
 <script>
